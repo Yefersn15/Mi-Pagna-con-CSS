@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
@@ -10,16 +11,25 @@ header {
     background-color: #3377FF;
     justify-content: center;
     display: inline-flex;
+    position: initial;
     text-decoration: none;
     width: 100%;
-    height: 25%;
+
 }
 
 /*Todos los 'a' que estan en Encabezado*/
 header a {
     color: white;
     text-decoration: none;
+    text-align: center;
     margin-left: 50px;
+}
+
+/*imagenes marcadas con el 'class=icons'*/
+.icons img {
+    align-items: center;
+    width: auto;
+    height: 40px;
 }
 
 /* pagina */
@@ -33,6 +43,14 @@ main h1 {
     text-align: center;
 }
 
+.secciongrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 300px;
+    width: 100%;
+}
+
 /*imagenes marcadas con el 'class=foto'*/
 .foto {
     width: 150px;
@@ -42,19 +60,12 @@ main h1 {
 
 /*Pie de Pagina*/
 footer {
-    align-items: flex-end;
-    color: white; 
+    color: white;
     background-color: #3377FF;
     display: inline-block;
+    bottom: auto;
+    position: relative;
     text-align: center;
     text-decoration: none;
-    width: 100%;    
-    height: 25%;
-}
-
-/*imagenes marcadas con el 'class=icons'*/
-.icons img {
-    align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
 }
